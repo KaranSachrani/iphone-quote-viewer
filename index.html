@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone Quotes - Mobile Monster</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>iPhone Quotes - Mobile Monster</title>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -268,221 +269,27 @@
     </style>
 </head>
 <body>
-    <button class="back-button" id="backButton" onclick="goBack()">← Back</button>
-
-    <div class="container">
-        <div class="header">
-            <h1>📱 iPhone Quotes</h1>
-            <p>Click any iPhone model to get instant Mobile Monster quotes</p>
-        </div>
-
-        <div id="mainContent">
-            <!-- iPhone 12 Series -->
-            <div class="models-list">
-                <div class="series-header">iPhone 12 Series</div>
-                
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-mini-64gb', 'iPhone 12 Mini - 64GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 12 Mini</div>
-                            <div class="model-storage">64GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-128gb', 'iPhone 12 - 128GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 12</div>
-                            <div class="model-storage">128GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-256gb', 'iPhone 12 Pro - 256GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 12 Pro</div>
-                            <div class="model-storage">256GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-max-512gb', 'iPhone 12 Pro Max - 512GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 12 Pro Max</div>
-                            <div class="model-storage">512GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-            </div>
-
-            <!-- iPhone 13 Series -->
-            <div class="models-list">
-                <div class="series-header">iPhone 13 Series</div>
-                
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-mini-128gb', 'iPhone 13 Mini - 128GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 13 Mini</div>
-                            <div class="model-storage">128GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-max-1tb', 'iPhone 13 Pro Max - 1TB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 13 Pro Max</div>
-                            <div class="model-storage">1TB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-            </div>
-
-            <!-- iPhone 14 Series -->
-            <div class="models-list">
-                <div class="series-header">iPhone 14 Series</div>
-                
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-plus-256gb', 'iPhone 14 Plus - 256GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 14 Plus</div>
-                            <div class="model-storage">256GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-512gb', 'iPhone 14 Pro - 512GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 14 Pro</div>
-                            <div class="model-storage">512GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-            </div>
-
-            <!-- iPhone 15 Series -->
-            <div class="models-list">
-                <div class="series-header">iPhone 15 Series</div>
-                
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-plus-512gb', 'iPhone 15 Plus - 512GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 15 Plus</div>
-                            <div class="model-storage">512GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-1tb', 'iPhone 15 Pro - 1TB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 15 Pro</div>
-                            <div class="model-storage">1TB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-max-1tb', 'iPhone 15 Pro Max - 1TB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 15 Pro Max</div>
-                            <div class="model-storage">1TB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-            </div>
-
-            <!-- iPhone 16 Series -->
-            <div class="models-list">
-                <div class="series-header">iPhone 16 Series</div>
-                
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-128gb', 'iPhone 16 - 128GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 16</div>
-                            <div class="model-storage">128GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-plus-256gb', 'iPhone 16 Plus - 256GB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 16 Plus</div>
-                            <div class="model-storage">256GB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-1tb', 'iPhone 16 Pro - 1TB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 16 Pro</div>
-                            <div class="model-storage">1TB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-
-                <div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-max-2tb', 'iPhone 16 Pro Max - 2TB')">
-                    <div class="model-info">
-                        <span class="model-emoji">📱</span>
-                        <div class="model-details">
-                            <div class="model-name">iPhone 16 Pro Max</div>
-                            <div class="model-storage">2TB Storage</div>
-                        </div>
-                    </div>
-                    <button class="quote-btn">Get Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Quote Viewer -->
-    <div class="iframe-container" id="iframeContainer">
-        <div class="iframe-header">
-            <span class="iframe-title" id="quoteTitle">Loading Quote...</span>
-            <button class="close-btn" onclick="closeQuote()">Close ✕</button>
-        </div>
-        <div class="loading-overlay" id="loadingOverlay">
-            <div class="loading-spinner"></div>
+<button class="back-button" id="backButton" onclick="goBack()">← Back</button>
+<div class="container">
+<div class="header">
+<h1>📱 iPhone Quotes</h1>
+<p>Click any iPhone model to get instant Mobile Monster quotes</p>
+</div>
+<div id="mainContent"><div class="models-list"><div class="series-header">iPhone 12 Series</div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-mini-64gb', 'iPhone 12 Mini - 64GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Mini</div><div class="model-storage">64GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-mini-128gb', 'iPhone 12 Mini - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Mini</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-mini-256gb', 'iPhone 12 Mini - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Mini</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-64gb', 'iPhone 12 - 64GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12</div><div class="model-storage">64GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-128gb', 'iPhone 12 - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-256gb', 'iPhone 12 - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-128gb', 'iPhone 12 Pro - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-256gb', 'iPhone 12 Pro - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-512gb', 'iPhone 12 Pro - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-max-128gb', 'iPhone 12 Pro Max - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro Max</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-max-256gb', 'iPhone 12 Pro Max - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro Max</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-12/iphone-12-pro-max-512gb', 'iPhone 12 Pro Max - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 12 Pro Max</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div></div><div class="models-list"><div class="series-header">iPhone 13 Series</div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-mini-128gb', 'iPhone 13 Mini - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Mini</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-mini-256gb', 'iPhone 13 Mini - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Mini</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-mini-512gb', 'iPhone 13 Mini - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Mini</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-128gb', 'iPhone 13 - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-256gb', 'iPhone 13 - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-512gb', 'iPhone 13 - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-128gb', 'iPhone 13 Pro - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-256gb', 'iPhone 13 Pro - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-512gb', 'iPhone 13 Pro - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-1tb', 'iPhone 13 Pro - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-max-128gb', 'iPhone 13 Pro Max - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro Max</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-max-256gb', 'iPhone 13 Pro Max - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro Max</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-max-512gb', 'iPhone 13 Pro Max - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro Max</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-13/iphone-13-pro-max-1tb', 'iPhone 13 Pro Max - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 13 Pro Max</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div></div><div class="models-list"><div class="series-header">iPhone 14 Series</div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-128gb', 'iPhone 14 - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-256gb', 'iPhone 14 - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-512gb', 'iPhone 14 - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-plus-128gb', 'iPhone 14 Plus - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Plus</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-plus-256gb', 'iPhone 14 Plus - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Plus</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-plus-512gb', 'iPhone 14 Plus - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Plus</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-128gb', 'iPhone 14 Pro - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-256gb', 'iPhone 14 Pro - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-512gb', 'iPhone 14 Pro - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-1tb', 'iPhone 14 Pro - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-max-128gb', 'iPhone 14 Pro Max - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro Max</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-max-256gb', 'iPhone 14 Pro Max - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro Max</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-max-512gb', 'iPhone 14 Pro Max - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro Max</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-14/iphone-14-pro-max-1tb', 'iPhone 14 Pro Max - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 14 Pro Max</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div></div><div class="models-list"><div class="series-header">iPhone 15 Series</div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-128gb', 'iPhone 15 - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-256gb', 'iPhone 15 - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-512gb', 'iPhone 15 - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-plus-128gb', 'iPhone 15 Plus - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Plus</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-plus-256gb', 'iPhone 15 Plus - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Plus</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-plus-512gb', 'iPhone 15 Plus - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Plus</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-128gb', 'iPhone 15 Pro - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-256gb', 'iPhone 15 Pro - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-512gb', 'iPhone 15 Pro - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-1tb', 'iPhone 15 Pro - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-max-256gb', 'iPhone 15 Pro Max - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro Max</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-max-512gb', 'iPhone 15 Pro Max - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro Max</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-15/iphone-15-pro-max-1tb', 'iPhone 15 Pro Max - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 15 Pro Max</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div></div><div class="models-list"><div class="series-header">iPhone 16 Series</div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-128gb', 'iPhone 16 - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-256gb', 'iPhone 16 - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-512gb', 'iPhone 16 - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-plus-128gb', 'iPhone 16 Plus - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Plus</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-plus-256gb', 'iPhone 16 Plus - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Plus</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-plus-512gb', 'iPhone 16 Plus - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Plus</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-128gb', 'iPhone 16 Pro - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-256gb', 'iPhone 16 Pro - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-512gb', 'iPhone 16 Pro - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-1tb', 'iPhone 16 Pro - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-max-256gb', 'iPhone 16 Pro Max - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro Max</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-max-512gb', 'iPhone 16 Pro Max - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro Max</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16-pro-max-1tb', 'iPhone 16 Pro Max - 1TB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16 Pro Max</div><div class="model-storage">1TB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16e-128gb', 'iPhone 16e - 128GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16e</div><div class="model-storage">128GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16e-256gb', 'iPhone 16e - 256GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16e</div><div class="model-storage">256GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div><div class="model-item" onclick="openQuote('https://mobilemonster.com.au/sell-your-phone/apple/mobiles/iphone-16-series/iphone-16e-512gb', 'iPhone 16e - 512GB')"><div class="model-info"><span class="model-emoji">📱</span><div class="model-details"><div class="model-name">iPhone 16e</div><div class="model-storage">512GB Storage</div></div></div><button class="quote-btn">Get Quote</button></div></div></div>
+</div>
+<!-- Quote Viewer -->
+<div class="iframe-container" id="iframeContainer">
+<div class="iframe-header">
+<span class="iframe-title" id="quoteTitle">Loading Quote...</span>
+<button class="close-btn" onclick="closeQuote()">Close ✕</button>
+</div>
+<div class="loading-overlay" id="loadingOverlay">
+<div class="loading-spinner"></div>
             Loading Mobile Monster Quote...
         </div>
-        <iframe class="quote-iframe" id="quoteIframe" src=""></iframe>
-    </div>
-
-    <script>
+<iframe class="quote-iframe" id="quoteIframe" src=""></iframe>
+</div>
+<script>
         function openQuote(url, title) {
             const container = document.getElementById('iframeContainer');
             const iframe = document.getElementById('quoteIframe');
