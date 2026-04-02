@@ -378,10 +378,37 @@
 
 <script>
     function openQuote(url, title) {
-        window.open(url, '_blank');
+        const container = document.getElementById('iframeContainer');
+        const iframe = document.getElementById('quoteIframe');
+        const titleElement = document.getElementById('quoteTitle');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+
+        container.style.display = 'block';
+        titleElement.textContent = title;
+        loadingOverlay.style.display = 'flex';
+
+        iframe.src = url;
+
+        iframe.onload = function() {
+            loadingOverlay.style.display = 'none';
+        };
+
+        iframe.onerror = function() {
+            loadingOverlay.innerHTML = `
+                <div style="color: #f44336; text-align: center;">
+                    ❌ Failed to load quote<br>
+                    <small>Please try again or check your connection</small>
+                </div>
+            `;
+        };
     }
 
-    function closeQuote() {}
+    function closeQuote() {
+        const container = document.getElementById('iframeContainer');
+        const iframe = document.getElementById('quoteIframe');
+        container.style.display = 'none';
+        iframe.src = '';
+    }
 
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') closeQuote();
